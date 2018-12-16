@@ -1,7 +1,7 @@
 /*register service worker */
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-  .register('js/sw.js')
+  .register('/js/sw.js')
   .catch(function(err) {
     console.error(err);
   });
@@ -172,7 +172,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
