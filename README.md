@@ -1,12 +1,12 @@
-#FEND Restaurant Reviews Project: Stage 1
+# FEND Restaurant Reviews Project: Stage 1
 
-##Table of Contents
+## Table of Contents
 
-###Description
+### Description
 
 This project was created for the Udacity Front End Nanodegree program. The purpose of this project was to take a static webpage lacking in accessibility and offline use and make it into a mobile ready web application. It was also enhanced for screen reader use and made responsive for multiple screen sizes.
 
-###Run the Application
+### Run the Application
 
 To open the application clone or download the zip file. 
 
