@@ -1,16 +1,6 @@
 console.log('Service Worker: Registered');
 
-const cacheName = 'version1';
-
-self.addEventListener('install', function(e) {
-    e.waitUntil(
-        caches.open('version1').then(function(cache) {
-            return cache.addAll(cacheFiles);
-        })
-    );
-});
-
-let staticCacheName = 'restaurant-static-v1';
+const staticCacheName = 'restaurant-static-v1';
 
 self.addEventListener('install', function(event) {
 	event.waitUntil(
@@ -23,10 +13,9 @@ self.addEventListener('install', function(event) {
                 '/js/dbhelper.js',
                 '/js/main.js',
                 '/js/restaurant_info.js',
-                './js/sw_register.js',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
-                '/data/restaurants,json',
+                '/data/restaurants.json',
                 '/img/1.jpg',
                 '/img/2.jpg',
                 '/img/3.jpg',
